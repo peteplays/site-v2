@@ -27,7 +27,7 @@
         "prod": "environments/environment.prod.ts"
       }
     }
-  ],s
+  ],
   "defaults": {
     "styleExt": "scss",
     "component": {}
