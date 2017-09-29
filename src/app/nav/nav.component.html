@@ -1,0 +1,18 @@
+<div id="floatingMenu" class="float-menu">
+  <div class="floating-menu-items">
+    <a
+      pageScroll
+      [pageScrollEasing]="myEasing"
+      [pageScrollDuration]=pageScrollDuration
+      (click)="addClass(selected = section.name)"
+      href="#{{section.name}}"
+      *ngFor="let section of sections">
+        <i
+          id="{{section.id}}"
+          [ngClass]="{'floating-menu-selected': selected === section.name }"
+          class="fa {{section.classes}}"
+          title="{{section.title}}">
+        </i>
+    </a>
+  </div>
+</div>

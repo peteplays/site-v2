@@ -1,0 +1,47 @@
+@import '../../variables';
+
+#projectSection h2 {
+  text-decoration: underline;
+  margin: 0 auto 20px;
+}
+
+.project-section-record {
+  margin-top: 15px;
+
+  p {
+    font-size: 20px;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 15px;
+    border-bottom: 2px dashed $yellow-1;
+  }
+}
+
+.project-section-site {
+  display: inline-block;
+  width: 30%;
+
+  a {
+    float: right;
+    padding: 0 20px 0 0;
+    color: $yellow-1;
+    text-decoration: none;
+    font-size: 140%;
+    text-align: right;
+
+    i {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      color: #ccc;
+      cursor: pointer;
+    }
+  }
+}
+
+.project-section-description {
+  display: inline-block;
+  width: 65%;
+}

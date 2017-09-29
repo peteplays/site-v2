@@ -1,0 +1,58 @@
+@import '../../variables';
+
+#floatingMenu .fa {
+  display: block;
+  padding-bottom: 10px;
+  transition: 1s;
+
+  &:active,
+  &:focus,
+  &:hover {
+    transition: 1s;
+    transform: scale(1.2);
+    color: rgba(60, 174, 255, 0.7);
+  }
+}
+
+.float-menu {
+  position: fixed;
+  // top: 40%;
+  top: 35%;
+  // left: 2%;
+  left: 96%;
+  font-size: 25px;
+}
+
+.floating-menu-items {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 8px 5px 0 4px;
+  border: 2px solid rgba(0, 0, 0, 0.9) !important;
+  border-radius: 6px;
+  text-shadow: 1px 1px 10px $yellow-1;
+  a{
+    color: rgba(225, 225, 225, 0.5) !important;
+    text-decoration: none;
+  }
+}
+
+.floating-menu-selected {
+  color: #63CBC4;
+}
+
+.fa-ellipsis-c {
+  padding-left: 8px;
+}
+
+@media screen and (max-width: 920px) {
+  .float-menu {
+    left: 94%;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .float-menu {
+    left: 91%;
+    // font-size: 65px;
+  }
+}

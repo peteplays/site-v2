@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+@import 'variables';
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poiret One', cursive;
+  background-color: #60532B;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.fontStyle {
+  color: $yellow-1;
+  text-shadow: 2px 2px 1px #333;
+}
+
+h2 {
+  font-size: 230%;
+}
+
+.sb-bg {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sb-bg-1 {
+  background-image: url('assets/guitars/g8s.jpg');
+}
+
+.sb-bg-2 {
+  background-image: url("assets/guitars/g1s.jpg");
+}
+
+.sb-bg-3 {
+  background-image: url("assets/guitars/g2s.jpg");
+}
+
+.sb-bg-4 {
+  background-image: url("assets/guitars/g5s.jpg");
+}
+
+.sb-bg-5 {
+  background-image: url("assets/guitars/g4s.jpg");
+}
+
+.sb-color {
+  padding: 30px;
+  overflow: auto;
+  // background-color: #4f3b00;
+  background-color: #080806;
+  /*background-image: url("../images/45-degree-fabric-light.png");*/
+  background-image: url('assets/45-degree-fabric-light.png');
+  color: $yellow-1;
+  // box-shadow: inset -2px 7px 7px rgba(225, 195, 0, 0.3), inset 2px -7px 9px rgba(225, 195, 0, 0.3);
+  box-shadow: inset -2px 7px 7px rgba($yellow-1, 0.4), inset 2px -7px 9px rgba($yellow-1, 0.4);
+}
+
+.sb-footer {
+  height: 80px;
+  overflow: hidden;
+
+  ul {
+    margin: -70px 30px 30px;
+    float: right;
+    list-style-type: none;
+  }
+
+  li {
+    float: left;
+
+    &:not(:last-child) {
+      padding-right: 10px;
+    }
+  }
+
+  .fa {
+    color: #ddd;
+    font-size: 40px;
+    transition: 1s ease;
+    text-shadow: 2px 2px 1px #333;
+    opacity: 0.8;
+  }
+}
+
+.sb-footer .fa:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.fa:hover,
+.img:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+  .sb-footer {
+    height: 160px;
+
+    ul {
+      margin: 28px auto;
+      width: 212px;
+      float: none;
+    }
+  }
+}

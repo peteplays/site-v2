@@ -1,0 +1,42 @@
+.fa-google-plus-square {
+  &:hover {
+    color: #D53326;
+  }
+}
+
+.fa-linkedin-square {
+  &:hover {
+    color: #0160A7;
+  }
+}
+
+.fa-twitter-square {
+  &:hover {
+    color: #4298ED;
+  }
+}
+
+.fa-github-square {
+  &:hover {
+    color: #555;
+  }
+}
+
+.fa-envelope-square {
+  &:hover {
+    color: #40B879;
+  }
+}
+
+.footer-plays-logo {
+  margin: 0 auto;
+  display: block;
+  width: 130px;
+  transition: 1s;
+  opacity: 0.8;
+
+  &:hover {
+    transition: 1s;
+    transform: scale(1.2);
+  }
+}

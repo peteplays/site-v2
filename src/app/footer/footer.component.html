@@ -1,0 +1,10 @@
+<a href="{{url}}">
+  <img class="footer-plays-logo" src="../../assets/playslogo.png" alt="PetePlays logo" title="PetePlays">
+</a>
+<ul>
+  <li *ngFor='let contact of contactData'>
+    <a href="{{contact.link}}" target="_blank" title="{{contact.name}}">
+      <i class="fa {{contact.icon}}"></i>
+    </a>
+  </li>
+</ul>

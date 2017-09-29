@@ -1,0 +1,16 @@
+<div class=" fontStyle">
+  <h2 class="textCenter">Projects</h2>
+
+  <div class="project-section-record" *ngFor="let project of projects">
+    <div class="project-section-site">
+      <a href="{{project.link}}" target="_blank">
+        <i class="fa fa-globe"></i>
+        {{project.title}}
+      </a>
+    </div>
+    <div class="project-section-description">
+      <p>{{project.description}}</p>
+    </div>
+  </div>
+
+</div>
