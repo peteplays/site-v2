@@ -22,3 +22,12 @@
   width: 45%;
 }
 
+@media screen and (max-width: 590px) {
+  .plays-banner {
+    h1 {
+      font-size: 500%;
+      padding: 0 3px 23px;
+    }
+  }
+}
+
