@@ -4,7 +4,7 @@
       pageScroll
       [pageScrollEasing]="myEasing"
       [pageScrollDuration]=pageScrollDuration
-      (click)="addClass(selected = section.name)"
+      (click)="addClass(section.name)"
       href="#{{section.name}}"
       *ngFor="let section of sections">
         <i
