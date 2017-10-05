@@ -67,7 +67,7 @@ export class NavComponent{
     const fm2 = targetPath.quotesSection.offsetTop - 700;
     const fm3 = targetPath.projectSection.offsetTop - 600;
     const fm4 = targetPath.moreSection.offsetTop - 500;
-    const fm5 = targetPath.footerSection.offsetTop - 1600;
+    const fm5 = targetPath.footerSection.offsetTop - 1200;
 
     switch (true) {
       case currentYPagePosition < fm2:
